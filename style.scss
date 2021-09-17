@@ -1,1 +1,14 @@
 @use 'partials/top-picks';
+@use 'partials/cards';
+@use "partials/variables";
+
+
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: variables.$primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

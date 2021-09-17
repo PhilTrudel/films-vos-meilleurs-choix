@@ -1,7 +1,8 @@
 @mixin small-cap {
-  font-size: 10px;
-  font-weight: normal;
+  font-size: 12px;
+  font-weight: bold;
   font-style: normal;
+  font-family:'Montserrat', sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
 }

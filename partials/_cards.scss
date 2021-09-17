@@ -1,0 +1,29 @@
+@use 'partials/variables';
+@use 'sass:color';
+@use 'partials/mixins/text';
+
+.card{
+    background-color: variables.$primary;
+    margin: 5px;
+    padding: 5px;
+
+    &__btn{
+        width: 100%;
+        padding: 5px 0;
+        border: none;
+        background: color.adjust(variables.$primary, $lightness: 20%); 
+        @include text.small-cap;
+        &:hover{
+            background: color.adjust(variables.$primary, $lightness: 25%);
+            color: color.invert(variables.$primary);
+            cursor: pointer;
+        }
+    }
+    &__media{
+        img{
+            height:250px;
+            width: 175px;
+        }
+    }
+}
+
